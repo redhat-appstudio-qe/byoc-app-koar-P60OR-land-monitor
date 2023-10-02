@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: rvde
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-ukwq-tenant/byoc-app-koar/rvde@sha256:f30e3e6369327927233f980bcdca7536e7e43b6f5e94c161b620b5fc0ac08a6d
         name: my-java-quarkus
         ports:
         - containerPort: 8081
