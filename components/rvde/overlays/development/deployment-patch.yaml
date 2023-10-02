@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: rvde
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-ukwq-tenant/byoc-app-koar/rvde@sha256:f30e3e6369327927233f980bcdca7536e7e43b6f5e94c161b620b5fc0ac08a6d
+        name: my-java-quarkus
+        resources: {}
+status: {}
